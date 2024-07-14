@@ -7,6 +7,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+ * This is a template for FastScanner, a helper class
+ * to read inputs faster and in a better format for the user
+ * 
+ * See example.java for an example of how to use this class
+ */
+
 class FastScanner {
  
     BufferedReader br;
