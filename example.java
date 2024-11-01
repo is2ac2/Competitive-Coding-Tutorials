@@ -14,7 +14,7 @@ import java.io.PrintWriter;
  * CodeForces, ICPC, and others, the input and output
  * is in the form of files.  
  */
-class example {
+public class example {
     public static void main(String[] args) {
 
         // Scanner object to read input from files
