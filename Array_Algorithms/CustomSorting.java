@@ -1,4 +1,4 @@
-package Array_Algorithms
+package Array_Algorithms;
 import java.util.*;
 
 public class CustomSorting {
