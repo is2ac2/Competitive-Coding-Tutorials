@@ -9,7 +9,7 @@ public class TopologicalSort {
     public static void main(String[] args) {
         // example inputs
         int num_nodes = 4;
-        int[][] pairs = {{0,1}, {0,2}, {0,3}, {}};
+        int[][] pairs = {{0,1}, {0,2}, {0,3}, {2, 3}};
 
         Queue<Integer> prune = new LinkedList();
         // stores the nodes that have 0 incoming edges
@@ -58,6 +58,7 @@ public class TopologicalSort {
             }
  		}
 
+        System.out.println(top_order.toString());
         // Result: an array with topologiacal ordering
         // Note: If no ordering exists, the length of the array will be less than the number of nodes
     }
