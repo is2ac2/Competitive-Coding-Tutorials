@@ -59,9 +59,15 @@ class UnionFind {
         int a = find(p),b = find(q);
         if (a==b) return;
         int s = size(a) + size(b);
+        // small to large merging, we always merge smaller tree to larger tree
+        if (size(a)<size(b)) {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+        // a becomes parent of b
         id[b] = a;
         sz[a] = s;
-        sz[b] = s;
     }
 }
 
